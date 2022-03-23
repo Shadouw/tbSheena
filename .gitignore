@@ -32,3 +32,9 @@
 *.out
 *.app
 
+# cmake folders: build, doc
+build/*
+doc/*
+
+# Private files
+*.secret
