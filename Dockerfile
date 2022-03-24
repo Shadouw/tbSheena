@@ -15,4 +15,4 @@ RUN cmake . && \
     make install && \
     rm -rf /usr/src/sheena/*
 
-ENTRYPOINT ["tbsheena", "/etc/tbsheena/token.secret"]
+CMD ["tbsheena", "-t", "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"]
