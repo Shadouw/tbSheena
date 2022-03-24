@@ -36,5 +36,8 @@
 build/*
 doc/*
 
+# local VSCode configuration
+.vscode/*
+
 # Private files
 *.secret
