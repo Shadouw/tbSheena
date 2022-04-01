@@ -1,7 +1,7 @@
 # tbSheena
 
 Sheena Is A Punk Rocker Bot. 
-She can be added to a group and answers with predefined phrases whenever she reads a word she knows.
+She can be added to a Telegram group and answers with predefined phrases whenever she reads a word she knows.
 
 ## Talk to the BotFather to create a new bot
 
