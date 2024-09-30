@@ -12,7 +12,8 @@ She can be added to a Telegram group and answers with predefined phrases wheneve
 
 ## Build container
 
-You can compile Sheena inside docker. The following command builds a container named ```sheena``` and compiles her:
+You can compile Sheena inside docker. Please clone with sub modules, e.g. `git clone --recurse-submodules git@github.com:Shadouw/tbSheena.git`. 
+The following command builds a container named ```sheena``` and compiles her:
 ```docker build -t sheena .```
 
 Afterwards Sheena can run inside this container, e.g. on a Raspberry Pi.

@@ -1,5 +1,5 @@
 FROM debian:buster
-MAINTAINER Rolf Schatten <Rolf.Schatten@gmail.com>
+LABEL org.opencontainers.image.author="Rolf Schatten <Rolf.Schatten@gmail.com>"
 
 RUN apt-get -qq update && \
     apt-get -qq install -y g++ make binutils cmake libssl-dev libboost-system-dev libcurl4-openssl-dev zlib1g-dev
