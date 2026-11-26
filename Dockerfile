@@ -1,5 +1,14 @@
+ARG APP_VERSION=dev
+ARG GIT_COMMIT=unknown
+
 FROM debian:bookworm
-LABEL org.opencontainers.image.author="Rolf Schatten <Rolf.Schatten@gmail.com>"
+
+ARG APP_VERSION
+ARG GIT_COMMIT
+
+LABEL org.opencontainers.image.author="Rolf Schatten <Rolf.Schatten@gmail.com>" \ 
+      org.opencontainers.image.version="${APP_VERSION}" \
+      org.opencontainers.image.revision="${GIT_COMMIT}"
 
 RUN apt-get -qq update && \
     apt-get -qq install -y g++ make binutils cmake libssl-dev libboost-system-dev libcurl4-openssl-dev zlib1g-dev
