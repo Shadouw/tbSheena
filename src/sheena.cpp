@@ -82,6 +82,7 @@ auto main(int argc, char **argv) -> int
 
   // create a polling listener which will process incoming requests, polling using the sender
   telegram::listener::poll listener(sender);
+  listener.set_num_threads(1);
 
   listener.set_callback_message_json([&](nlohmann::json const &input)
   {
