@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bookworm
 LABEL org.opencontainers.image.author="Rolf Schatten <Rolf.Schatten@gmail.com>"
 
 RUN apt-get -qq update && \
